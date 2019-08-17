@@ -1,6 +1,6 @@
 August 17,2019, [IB Akshay](https://github.com/ibakshay) 
 
-`GitHub Actions` is a feature introduced last year and there are already lot of  awesome actions like [automatic-rebase](https://github.com/marketplace/actions/automatic-rebase), [post-slack-message](https://github.com/marketplace/actions/post-slack-message) availabe already in the [GitHub MarketPlace](https://github.com/marketplace?type=actions). Actions are just automated Script run by GitHub which can be triggered  based on any [GitHub event] (https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files). 
+`GitHub Actions` is a feature introduced last year and there are already lot of  awesome actions like [automatic-rebase](https://github.com/marketplace/actions/automatic-rebase), [post-slack-message](https://github.com/marketplace/actions/post-slack-message) availabe already in the [GitHub MarketPlace](https://github.com/marketplace?type=actions).GitHub  Actions are just automated scripts run by GitHub which can be triggered  based on any [GitHub event](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files). 
 
 You can use the [editor on GitHub](https://github.com/ibakshay/github-actions-ci/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
