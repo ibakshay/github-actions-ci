@@ -1,5 +1,7 @@
 August 17,2019, [IB Akshay](https://github.com/ibakshay) 
 
+GitHub actions is first introduced as a  beta version a year ago and there are already some awesome actions like [automatic-rebase](https://github.com/marketplace/actions/automatic-rebase), [post-slack-message](https://github.com/marketplace/actions/post-slack-message) availabe in the [GitHub MarketPlace](https://github.com/marketplace?type=actions). Actions are just automated Script which can be  triggered  based on any GitHub event. 
+
 You can use the [editor on GitHub](https://github.com/ibakshay/github-actions-ci/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
