@@ -61,7 +61,7 @@ One of the feature of GitHub Actions CI which I personally like the most is the 
 ```yaml 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{matrix.os}}
     strategy:
       matrix: 
         node_version: 
