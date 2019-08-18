@@ -81,7 +81,31 @@ jobs:
 
 
 #### steps
-Every job consists of  a sequence of tasks called **steps**. A step can run  an action from  our repository, any public repository or an action published in a docker registry.  A step can also run commands like `npm install` `npm run test` and can be a setup task. Each step has it's own ID and has access to the workspace and the file system.    
+Every job consists of  a sequence of tasks called **steps**. A step can run  an action from  our repository, any public repository or an action published in a docker registry.  A step can also run commands like `npm install` `npm run test` and can be a setup task. Each step has it's own ID and has access to the workspace and the file system.  
+
+```yaml 
+steps:
+    - uses: actions/checkout@master
+    - name: Use Node.js 12.6
+      uses: actions/setup-node@v1
+      with:
+        version:  ${{ matrix.node_version }}
+    - name: Bower
+      run: bower install
+    - name: Install
+      run: npm install
+    - name: Test
+      run: npm test
+    - name: grunt 
+      run: |
+        grunt uglify
+        grunt mocha_istanbul
+    - name: Test Coverage
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        path-to-lcov: ./output/coverage/lcov.info
+```
 
 
 
