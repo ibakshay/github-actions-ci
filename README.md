@@ -29,19 +29,8 @@ All the GitHub Actions workflows uses a very neat `YAML` syntax and  should be a
 
 Let's start building the workflow to setup the Continuous Integration(CI) for a Node.js App together 😊. You can however setup GitHub Actions CI for any language and is not language specific. 
 
-#### name
-
-In the first line of the workflow file, we can name the workflow  as `Node CI`. The GitHub displays this name for the workflow in the repository's  **Actions** page. If you don't give this name then the GitHub sets the name to workflow filename. 
-
-```yaml 
-name: Node CI
-```
-#### on 
-
-Now, we have to specify on what [GitHub event](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files), this workflow should be triggered. We can also choose array of  [GitHub events](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files) for the workflow to be triggered. 
- Let's setup the CI for any **push** or **pull_request** event for these specific branches **master**, **release**, **release-green**.
- 
  ```yaml 
+name: Node CI
 on:
   push:
     branches: {{akshay.os}}
@@ -54,6 +43,20 @@ on:
     - release
     - release-green
 ```
+
+#### name
+
+In the first line of the workflow file, we can name the workflow  as `Node CI`. The GitHub displays this name for the workflow in the repository's  **Actions** page. If you don't give this name then the GitHub sets the name to workflow filename. 
+
+```yaml 
+name: Node CI
+```
+#### on 
+
+Now, we have to specify on what [GitHub event](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files), this workflow should be triggered. We can also choose array of  [GitHub events](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files) for the workflow to be triggered. 
+ Let's setup the CI for any **push** or **pull_request** event for these specific branches **master**, **release**, **release-green**.
+ 
+
 ## Setting up Matrix build
 
 One of the feature of GitHub Actions CI which I personally like the most is the Matrix build. The matrix build will allow us to test in multiple versions of the node.js App and we can build not only on `Linux` butaccross `macOS`, `Windows` and `Linux` in parallel and that's really very cool 😎. 
