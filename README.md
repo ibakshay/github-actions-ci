@@ -4,11 +4,7 @@ August 17,2019, [IB Akshay](https://github.com/ibakshay)
 
 Last week, GitHub has introduced beta of GitHub Actions Version 2 with fully integrated Continuous Integration and Delivery (CI/CD) support. I was very excited to try this new feature and I have implemented the GitHub Actions CI for the forked open-source project [CLA Assistant](https://github.com/ibakshay/cla-assistant).  In this post, I will you show you how easy It is to get started with Github Actions for CI. 
 
-You can use the [editor on GitHub](https://github.com/ibakshay/github-actions-ci/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
+### Why GitHub Actions CI/CD ?
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
