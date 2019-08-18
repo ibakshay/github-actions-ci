@@ -81,7 +81,7 @@ jobs:
 
 
 #### steps
-Every job consists of  a sequence of tasks called **steps**. A step can run  an action from  our repository, any public repository or an action published in a docker registry.  A step can also run commands like `npm install` `npm run test` and can be a setup task.    
+Every job consists of  a sequence of tasks called **steps**. A step can run  an action from  our repository, any public repository or an action published in a docker registry.  A step can also run commands like `npm install` `npm run test` and can be a setup task. Each step has it's own ID and has access to the workspace and the file system.    
 
 
 
