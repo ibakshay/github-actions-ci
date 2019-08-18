@@ -25,7 +25,7 @@ When you navitage to **Actions** tab in your repository, the GitHub will itself 
 
 <img width="1398" alt="Screen Shot 2019-08-18 at 19 40 58" src="https://user-images.githubusercontent.com/33329946/63228334-7d00e300-c1f1-11e9-9f70-db26e7c99675.png">
 
-All the GitHub Actions workflows are just `YAML` files and  should be always created in `.github/workflows`of the project root. 
+All the GitHub Actions workflows uses a very neat `YAML` syntax and  should be always stored  in `.github/workflows`of the project root.
 
 
 
