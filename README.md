@@ -31,7 +31,7 @@ Let's start building the workflow to setup the Continuous Integration(CI) for a 
 
 In the first line of the workflow file, Let's name the workflow and for our case Let's name it as `Node CI`. The GitHub displays this name of the workflow in the repository's  **Actions** page. If you don't give this name then the GitHub sets the name to workflow filename. 
 
-```
+```yaml 
 name: Node CI
 ```
 
