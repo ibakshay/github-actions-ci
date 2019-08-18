@@ -1,3 +1,5 @@
 # title: Getting Started with GitHub CI/CD Pipeline in Five minutes
 
 theme: jekyll-theme-cayman
+github: "false"
+show_downloads: "false"
