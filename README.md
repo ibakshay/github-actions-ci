@@ -4,7 +4,7 @@ August 17,2019, [IB Akshay](https://github.com/ibakshay)
 
 Last week, GitHub has introduced beta of GitHub Actions Version 2 with fully integrated Continuous Integration and Delivery (CI/CD) support. I was very excited to try this new feature and I have implemented the GitHub Actions CI for the forked open-source project [CLA Assistant](https://github.com/ibakshay/cla-assistant).  In this post, I will show you how easy It is to get started with Github Actions for CI.
 
-### Why GitHub Actions CI/CD ?
+## Why GitHub Actions CI/CD ?
 
 As there are already lot of amazing CI/CD platforms around like Travis, CircleCI, you might be asking why should I choose GitHub Actions over other CI/CD platforms. 
 
@@ -16,7 +16,7 @@ I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say i
 - no need to login to the CI/CD platform and enable the repository 
 - Real-Time logs can be viewed directly on GitHub with Color coding and Emoji support as well 😉
 
-### Setup
+## Setup
 
 Let's get started.. I will walk you through each and every step of the setup process. 
 First and foremost, you should have beta access in order to use the GitHub Actions.  If you don't have beta access then you can sign up for the beta [here](https://github.com/features/actions). 
@@ -37,6 +37,7 @@ In the first line of the workflow file, we can name the workflow  as `Node CI`. 
 name: Node CI
 ```
 #### on 
+
 Now, we have to specify on what [GitHub event](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files), this workflow should be triggered. We can also choose array of  [GitHub events](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files) for the workflow to be triggered. 
  Let's setup the CI for any **push** or **pull_request** event for the specific branches **master**, **release**, **release-green**.
 
