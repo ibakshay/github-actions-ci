@@ -21,6 +21,10 @@ I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say i
 Let's get started.. I will walk you through each and every step of the setup process. 
 First and foremost, you should have beta access in order to use the GitHub Actions.  If you don't have beta access then you can sign up for the beta [here](https://github.com/features/actions). 
 
+When we navitage to GitHub Actions tab in your repository, the GitHub will itself recommend the appropriate Actions Workflows for the repository. 
+
+
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
