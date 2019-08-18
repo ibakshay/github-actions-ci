@@ -56,7 +56,7 @@ on:
 ```
 ## Setting up Matrix build
 
-One of the feature of GitHub Actions CI which I personally like the most is the Matrix build. The matrix build will allow us to test in multiple versions of the node.js App and we can build not only on `Linux` but   accross `macOS`, `Windows` and `Linux` in parallel and that's really very cool 😎. 
+One of the feature of GitHub Actions CI which I personally like the most is the Matrix build. The matrix build will allow us to test in multiple versions of the node.js App and we can build not only on `Linux` butaccross `macOS`, `Windows` and `Linux` in parallel and that's really very cool 😎. 
 
 ```yaml 
 jobs:
@@ -76,8 +76,4 @@ jobs:
 ```
 #### jobs
 
-A worflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, you can also make the jobs run in sequence. Like, we can make one job wait for the other and so on and so forth. Each job runs in a fresh instance of the virtual environment specified by `runs-on`. For our case, We have only one job. 
-
-
-
-
+A worflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, we can also make the jobs run in sequence. Like, we can make one job wait for the other and so on and so forth. Each job runs in a fresh instance of the virtual environment specified by `runs-on`. For our case, We have only one job. 
