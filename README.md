@@ -13,6 +13,7 @@ I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say i
 - Fully integrated with GitHub 
 - Can respond to any GitHub Event
 - no need to set up any webhook
+- no need to login to the CI/CD platform and enable the repository 
 - Real-Time logs can be viewed directly on GitHub with Color coding and Emoji support as well 😉
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
