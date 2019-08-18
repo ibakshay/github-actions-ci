@@ -61,7 +61,7 @@ One of the feature of GitHub Actions CI which I personally like the most is the 
 ```yaml 
 jobs:
   build:
-    runs-on: $((matrix.os))
+    runs-on: ${{matrix.os}}
     strategy:
       matrix: 
         node_version: 
@@ -75,6 +75,8 @@ jobs:
         - macOS-latest
 ```
 #### jobs
+
+A worflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, you can also make the jobs run in sequence. Like, you can make one job wait for the other and so on and so forth. For our case, We have only one job. 
 
 
 
