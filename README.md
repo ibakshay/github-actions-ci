@@ -44,7 +44,7 @@ Now, we have to specify on what [GitHub event](https://developer.github.com/acti
  ```yaml 
 on:
   push:
-    branches: akshay
+    branches: {}
     - master
     - release
     - release-green
