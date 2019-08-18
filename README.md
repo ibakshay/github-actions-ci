@@ -54,7 +54,7 @@ on:
     - release
     - release-green
 ```
-#### Setting up Matrix build
+## Setting up Matrix build
 
 One of the feature of GitHub Actions CI which I personally like the most is the Matrix build. The matrix build will allow us to test in multiple versions of the node.js App and we can build not only on `Linux` but   accross `macOS`, `Windows` and `Linux` in parallel and that's really very cool 😎. 
 
@@ -74,4 +74,6 @@ jobs:
         - windows-latest
         - macOS-latest
 ```
+#### jobs
+
 
