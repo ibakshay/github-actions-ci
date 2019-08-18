@@ -21,7 +21,7 @@ I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say i
 Let's get started.. I will walk you through each and every step of the setup process. 
 First and foremost, you should have beta access in order to use the GitHub Actions.  If you don't have beta access then you can sign up for the beta [here](https://github.com/features/actions). 
 
-When you navitage to **Actions** tab in your repository, the GitHub will itself recommend the appropriate  Workflows for the project. You can either choose one of the recommended workflows or setup a workflow yourself. 
+When you navitage to **Actions** tab in your repository, the GitHub will itself recommend the appropriate  Workflows for the project. You can either choose one of the recommended workflows or you can also setup a workflow yourself. 
 
 <img width="1398" alt="Screen Shot 2019-08-18 at 19 40 58" src="https://user-images.githubusercontent.com/33329946/63228334-7d00e300-c1f1-11e9-9f70-db26e7c99675.png">
 
