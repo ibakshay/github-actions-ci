@@ -27,7 +27,13 @@ When you navitage to **Actions** tab in your repository, the GitHub will itself 
 You can either choose one of the recommended workflows or you can also setup a workflow yourself. 
 All the GitHub Actions workflows uses a very neat `YAML` syntax and  should be always stored  in `.github/workflows`of the project root.
 
-Let's start building the workflow to setup the Continuous Integration(CI) for a Node.js App. You can setup GitHub Actions CI for any language and it is not language specific. 
+Let's start building the workflow to setup the Continuous Integration(CI) for a Node.js App. You can however setup GitHub Actions CI for any language and is not language specific. 
+
+In the first line of the workflow file, Let's name the workflow and for our case Let's name it as `Node CI`. The GitHub displays this name of the workflow in the repository's  **Actions** page. If you don't give this name then the GitHub sets the name to workflow filename. 
+
+```
+name: Node CI
+```
 
 
 
