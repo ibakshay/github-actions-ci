@@ -39,7 +39,19 @@ name: Node CI
 #### on 
 
 Now, we have to specify on what [GitHub event](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files), this workflow should be triggered. We can also choose array of  [GitHub events](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files) for the workflow to be triggered. 
- Let's setup the CI for any **push** or **pull_request** event for the specific branches **master**, **release**, **release-green**.
+ Let's setup the CI for any **push** or **pull_request** event for these specific branches **master**, **release**, **release-green**.
+ 
+ ```yaml 
+on:
+  push:
+    branches:
+    - master
+    - release
+  pull_request:
+    branches:
+    - master
+    - release
+```
 
 
 
