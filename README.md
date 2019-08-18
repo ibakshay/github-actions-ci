@@ -65,7 +65,7 @@ A workflow is made up of one or more jobs and each job will have a unique Id. Al
 ```yaml 
 jobs:
   build:
-    runs-on: $ {{matrix.os}}
+    runs-on: $ ((matrix.os))
     strategy:
       matrix: 
         node_version: 
