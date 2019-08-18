@@ -6,6 +6,8 @@ Last week, GitHub has introduced beta of GitHub Actions Version 2 with fully int
 
 ### Why GitHub Actions CI/CD ?
 
+As there are already lot of amazing CI/CD platforms around like Travis, CircleCI, you might be asking why should I choose GitHub Actions over other CI/CD platforms. 
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
