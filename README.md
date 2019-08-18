@@ -44,7 +44,7 @@ Now, we have to specify on what [GitHub event](https://developer.github.com/acti
  ```yaml 
 on:
   push:
-    branches: $ {{matrix.os}}
+    branches: {{matrix.os}}
     - master
     - release
     - release-green
@@ -79,5 +79,7 @@ jobs:
 A workflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, we can also make the jobs run in sequence. Like, we can make one job wait for the other and so on and so forth. Each job runs in a fresh instance of the virtual environment specified by `runs-on`. For our case, We have only one job. 
 
 #### steps
+
+
 
 
