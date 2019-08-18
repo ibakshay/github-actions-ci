@@ -18,6 +18,8 @@ I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say i
 
 ### Setup
 
+Let's get started.. I will walk you through each and every step of the setup process. 
+
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
