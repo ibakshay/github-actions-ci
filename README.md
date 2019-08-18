@@ -47,10 +47,12 @@ on:
     branches:
     - master
     - release
+    - release-green
   pull_request:
     branches:
     - master
     - release
+    - release-green
 ```
 
 
