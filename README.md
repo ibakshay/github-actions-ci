@@ -33,7 +33,7 @@ Let's start building the workflow to setup the Continuous Integration(CI) for a 
 name: Node CI
 on:
   push:
-    branches: {{akshay.os}}
+    branches: 
     - master
     - release
     - release-green
