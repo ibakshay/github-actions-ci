@@ -76,7 +76,7 @@ jobs:
 ```
 #### jobs
 
-A worflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, you can also make the jobs run in sequence. Like, you can make one job wait for the other and so on and so forth. For our case, We have only one job. 
+A worflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, you can also make the jobs run in sequence. Like, we can make one job wait for the other and so on and so forth. Each job runs in a fresh instance of the virtual environment specified by `runs-on`. For our case, We have only one job. 
 
 
 
