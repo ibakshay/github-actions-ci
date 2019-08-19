@@ -2,7 +2,7 @@ August 17,2019, [IB Akshay](https://github.com/ibakshay)
 
 `GitHub Actions` is a feature introduced last year and there are already lot of  awesome actions like [automatic-rebase](https://github.com/marketplace/actions/automatic-rebase), [post-slack-message](https://github.com/marketplace/actions/post-slack-message) availabe in the [GitHub MarketPlace](https://github.com/marketplace?type=actions). GitHub  Actions are just automated scripts - reusable piece of code -  totally managed and run by GitHub -  orchestating any workflow  and  can be triggered  based on any [GitHub event](https://developer.github.com/actions/managing-workflows/workflow-configuration-options/#events-supported-in-workflow-files). 
 
-Last week, GitHub has introduced beta of GitHub Actions Version 2 with fully integrated Continuous Integration and Delivery (CI/CD) support. I was very excited to try this new feature and I have implemented the GitHub Actions CI for the forked open-source project [CLA Assistant](https://github.com/ibakshay/cla-assistant).  In this post, I will show you how easy It is to get started with Github Actions for CI.
+Last week, GitHub has introduced beta of GitHub Actions Version 2 with fully integrated Continuous Integration and Delivery (CI/CD) support. I was very excited to try this new feature and I have implemented the GitHub Actions CI for the forked open-source project [CLA Assistant](https://github.com/ibakshay/cla-assistant).  In this post, I will show you how easy It is to get started with Github Actions for CI/CD.
 
 ## Why GitHub Actions CI/CD ?
 
@@ -10,7 +10,7 @@ As there are already lot of amazing CI/CD platforms around like Travis, CircleCI
 
 I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say it totally depends upon your requirements. However, I will just share a few advantages you will get If you are using GitHub Actions for CI/CD.
 
-- Fully integrated with GitHub which means no need to go to CI provider site to find my repo 
+- Fully integrated with GitHub
 - Can respond to any GitHub Event
 - no need to set up a  webhook
 - no need to login to the CI/CD platform and enable the repository 
@@ -22,12 +22,13 @@ Let's get started.. I will walk you through each and every step of the setup pro
 First and foremost, you should have beta access in order to use the GitHub Actions.  If you don't have beta access then you can sign up for the beta [here](https://github.com/features/actions). 
 
 When you navitage to **Actions** tab in your repository, the GitHub will itself recommend the appropriate  Workflows for the project to help you get started. Since the project is written in Javascript, the GitHub is suggesting to setup CI for the node.js App and deploy in GitHub package Registry. 
+
 <img width="1398" alt="Screen Shot 2019-08-18 at 19 40 58" src="https://user-images.githubusercontent.com/33329946/63228334-7d00e300-c1f1-11e9-9f70-db26e7c99675.png">
 
 You can either choose one of the recommended workflows or you can also setup a workflow yourself. 
 All the GitHub Actions workflows uses a very neat `YAML` syntax and  should be always stored  in `.github/workflows`of the project root.
 
-Let's start building the workflow to setup the Continuous Integration(CI) for a Node.js App together 😊. You can however setup GitHub Actions CI for any language and is not language specific. 
+Let's start building the workflow to setup the Continuous Integration(CI) for [CLA Assistant](https://github.com/ibakshay/cla-assistant) which is a Node.js App together 😊. You can however setup GitHub Actions CI/CD for any language and is not language specific. 
 
  ```yaml 
 name: Node CI
@@ -73,9 +74,9 @@ on:
 
 ## Setting up Matrix build
 
-One of the feature of GitHub Actions CI which I personally like the most is the Matrix build. The matrix build will allow us to test in multiple versions of the node.js App and we can build not only on `Linux` butaccross `macOS`, `Windows` and `Linux` in parallel and that's really very cool 😎. 
+One of the coolest feature of GitHub Actions CI/CD is the Matrix build. The matrix build will allow us to test in multiple versions of the node.js App and we can build not only on `Linux` but accross `macOS`, `Windows` and `Linux` in parallel and that's really very cool 😎. 
 
-#### jobs
+### jobs
 
 A workflow is made up of one or more jobs and each job will have a unique Id. All the jobs are run in parallel by default, However, we can also make the jobs run in sequence. Like, we can make one job wait for the other and so on and so forth. Each job runs in a fresh instance of the virtual environment specified by `runs-on`. For our case, We have only one job. 
 
@@ -97,7 +98,7 @@ jobs:
 ```
 
 
-#### steps
+### steps
 Every job consists of  a sequence of tasks called **steps**. A step can run  an action from  our repository, any public repository or an action published in a docker registry.  A step can also run commands like `npm install` `npm run test` and can be a setup task. Each step has it's own ID and has access to the workspace and the file system.  
 
 ```yaml 
@@ -122,8 +123,9 @@ Every job consists of  a sequence of tasks called **steps**. A step can run  an 
         github-token: $(( secrets.github_token ))
         path-to-lcov: ./output/coverage/lcov.info
 ```
-
 Let's break this down. 
+
+#### Setting up the Node Environment
 The first thing we have to do is to select an `action` for setting up the node environment. An `action` is just a reusable piece of code. The GitHub has already provided  [actions/setup-node](https://github.com/actions/setup-node) action  and so, we can re-use this action for setting up our node environment. You can view all the `actions` provided by GitHub [here](https://github.com/actions). Always when we are using an `action` we should go through the README file, because some actions require inputs like environmental variables from us which we need to  set using **with** keyword. So it's always a good idea to review the action's README file to determine the inputs required. 
 
 ```yaml
@@ -133,7 +135,7 @@ The first thing we have to do is to select an `action` for setting up the node e
       with:
         version:  $(( matrix.node_version ))
 ```
-
+#### Build Configuration 
 After adding the action to setup our node environment, we have to specify the build options. In our case, I have used `bower` and `NPM` as the package managers and `grunt` for building, testing and code coverage of the project. You can use any task runners like `gulp`, `webpack` instead of `grunt` depending upon your project configuration. 
 
 ```yaml
