@@ -16,7 +16,7 @@ I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say i
 - no need to login to the CI/CD platform and enable the repository 
 - Real-Time logs can be viewed directly on GitHub with Color coding and Emoji support as well 😉
 
-## *Let's get started*
+## Setup
 
 Let's get started.. I will walk you through each and every step of the setup process. 
 First and foremost, you should have beta access in order to use the GitHub Actions.  If you don't have beta access then you can sign up for the beta [here](https://github.com/features/actions). 
