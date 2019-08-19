@@ -125,7 +125,7 @@ steps:
 ```
 
 Let's break this down. 
-The first thing we have to do is to select an `action` for setting up the node environment. An `action` is just a resusable piece of code. The GitHub has already provided  [setup-node](https://github.com/actions/setup-node) and so, we can re-use this action for setting up the node environment. You can view all the `actions` provided by GitHub [here](https://github.com/actions)
+The first thing we have to do is to select an `action` for setting up the node environment. An `action` is just a reusable piece of code. The GitHub has already provided  [actions/setup-node](https://github.com/actions/setup-node) action  and so, we can re-use this action for setting up our node environment. You can view all the `actions` provided by GitHub [here](https://github.com/actions). Always when we are using an `action` we should go through the README file, because some actions require inputs like environmental variables from us which we need to  set using **with** keyword. So it's always a good idea to review the action's README file to determine the inputs required. 
 
 ```yaml
    - uses: actions/checkout@master
@@ -134,5 +134,7 @@ The first thing we have to do is to select an `action` for setting up the node e
       with:
         version:  $(( matrix.node_version ))
 ```
+
+
 
 
