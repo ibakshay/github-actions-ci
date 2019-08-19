@@ -157,7 +157,7 @@ Finally I have used the action from [Coverralls](https://github.com/coverallsapp
     - name: Test Coverage
       uses: coverallsapp/github-action@master
       with:
-        github-token: ${{ secrets.github_token }}
+        github-token: $(( secrets.github_token ))
         path-to-lcov: ./output/coverage/lcov.info
 ```
 
