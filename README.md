@@ -147,5 +147,16 @@ After adding the action to setup our node environment, we have to specify the bu
         grunt test
         grunt coverage
 ```
+#### Test Coverage
+
+Finally I have used the action from [Coverralls](https://github.com/coverallsapp/github-action/) for tracking the code coverage. And yeah, If you are using any other code coverage tool like `codecov`, then you can use their action instead.
+
+```yaml
+    - name: Test Coverage
+      uses: coverallsapp/github-action@master
+      with:
+        github-token: ${{ secrets.github_token }}
+        path-to-lcov: ./output/coverage/lcov.info
+```
 
 
