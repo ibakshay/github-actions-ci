@@ -134,6 +134,18 @@ The first thing we have to do is to select an `action` for setting up the node e
         version:  $(( matrix.node_version ))
 ```
 
-After adding the action to setup our node environment 
+After adding the action to setup our node environment, we have to specify the build options. In our case, I have used `bower` and `NPM` as the package managers and `grunt` for building, testing and code coverage of the project. You can use any task runners like `gulp`, `webpack` instead of `grunt` depending upon your project configuration. 
+
+```yaml
+    - name: Bower
+      run: bower install
+    - name: Install
+      run: npm install
+    - name: grunt build and test
+      run: |
+        grunt build
+        grunt test
+        grunt coverage
+```
 
 
