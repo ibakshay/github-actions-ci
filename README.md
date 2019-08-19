@@ -123,7 +123,7 @@ Every job consists of  a sequence of tasks called **steps**. A step can run  an 
         github-token: $(( secrets.github_token ))
         path-to-lcov: ./output/coverage/lcov.info
 ```
-Let's break this down. 
+Let's break this down to small pieces and discuss in detail. 
 
 #### Setting up the Node Environment
 The first thing we have to do is to select an `action` for setting up the node environment. An `action` is just a reusable piece of code. The GitHub has already provided  [actions/setup-node](https://github.com/actions/setup-node) action  and so, we can re-use this action for setting up our node environment. You can view all the `actions` provided by GitHub [here](https://github.com/actions). Always when we are using an `action` we should go through the README file, because some actions require inputs like environmental variables from us which we need to  set using **with** keyword. So it's always a good idea to review the action's README file to determine the inputs required. 
