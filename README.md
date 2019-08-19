@@ -124,6 +124,15 @@ steps:
         path-to-lcov: ./output/coverage/lcov.info
 ```
 
+Let's break this down. 
+The first thing we have to do is to select an `action` for setting up the node environment. An `action` is just a resusable piece of code. The GitHub has already provided  [setup-node](https://github.com/actions/setup-node) and so, we can re-use this action for setting up the node environment. You can view all the `actions` provided by GitHub [here](https://github.com/actions)
 
+```yaml
+   - uses: actions/checkout@master
+    - name: Use Node.js 12.6
+      uses: actions/setup-node@v1
+      with:
+        version:  $(( matrix.node_version ))
+```
 
 
