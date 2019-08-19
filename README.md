@@ -103,7 +103,7 @@ Every job consists of  a sequence of tasks called **steps**. A step can run  an 
 ```yaml 
  steps:
     - uses: actions/checkout@master
-    - name: Use Node $(( matrix.node_version ))
+    - name: Use Node Environment
       uses: actions/setup-node@v1
       with:
         version:  $(( matrix.node_version ))
