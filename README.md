@@ -10,9 +10,9 @@ As there are already lot of amazing CI/CD platforms around like Travis, CircleCI
 
 I'm not saying that GitHub Actions is the best CI/CD platform , I'd rather say it totally depends upon your requirements. However, I will just share a few advantages you will get If you are using GitHub Actions for CI/CD.
 
-- Fully integrated with GitHub 
+- Fully integrated with GitHub which means no need to go to CI provider site to find my repo 
 - Can respond to any GitHub Event
-- no need to set up any webhook
+- no need to set up a  webhook
 - no need to login to the CI/CD platform and enable the repository 
 - Real-Time logs can be viewed directly on GitHub with Color coding and Emoji support as well 😉
 
@@ -159,4 +159,6 @@ Finally I have used the action from [Coverralls](https://github.com/coverallsapp
         path-to-lcov: ./output/coverage/lcov.info
 ```
 
+## *That's it, We are  Done 🎉*
+So, The configuration part is done already. As you can see, we can setup this configuration in less than 10 minutes and  we don't need to set up any webhook or toggle to enable the repository in the CI provider website for building our repo.  
 
