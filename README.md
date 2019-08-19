@@ -170,7 +170,7 @@ The logs are real-time and GitHub streams our logs to the Actions console to sho
 
 #### Deployment
 
-And finally you can deploy to any cloud and there are already actions available in the GitHub marketplace for the deployment which you can directly use it in your workflow file. You can find all the actions for the deployment [here](https://github.com/marketplace?category=deployment&type=actions). 
+And finally you can deploy to any cloud as you like and there are already actions available in the GitHub marketplace for the deployment which you can directly use it in your workflow file. You can find all the actions for the deployment [here](https://github.com/marketplace?category=deployment&type=actions). 
  
  
 
