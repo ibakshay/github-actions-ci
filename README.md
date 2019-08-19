@@ -160,5 +160,11 @@ Finally I have used the action from [Coverralls](https://github.com/coverallsapp
 ```
 
 ## *That's it, We are  Done 🎉*
-So, The configuration part is done already. As you can see, we can setup this configuration in less than 10 minutes and  we don't need to set up any webhook or toggle to enable the repository in the CI provider website for building our repo.  
+The configuration part is done already. As you can see, we can setup this configuration in less than 10 minutes and  we don't need to set up any webhook or toggle to enable the repository in the CI provider website for building our repo. Everything is integrated with GitHub. 
+
+####Real-time Logs
+
+The logs are real-time and GitHub streams our logs to the Actions console to show the logs status progressively. The Log console is simple and neat. We can deep-link to any line in any log file with permalink and most importantly Emoji Support is there as well 😉
+ 
+ 
 
