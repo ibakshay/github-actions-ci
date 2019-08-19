@@ -167,6 +167,10 @@ Finally I have used the action from [Coverralls](https://github.com/coverallsapp
 #### Real-time Logs
 
 The logs are real-time and GitHub streams our logs to the Actions console to show the logs status progressively. The Log console is simple and neat. We can deep-link to any line in any log file with permalink and most importantly Emoji Support is there as well 😉
+
+#### Deployment
+
+And finally you can deploy to any cloud and there are already actions available in the GitHub marketplace for the deployment which you can directly use it in your workflow file. You can find all the actions for the deployment [here](https://github.com/marketplace?category=deployment&type=actions). 
  
  
 
