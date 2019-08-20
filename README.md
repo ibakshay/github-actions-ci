@@ -28,7 +28,7 @@ When you navitage to **Actions** tab in your repository, the GitHub will itself 
 You can either choose one of the recommended workflows or you can also setup a workflow yourself. 
 All the GitHub Actions workflows uses a very neat `YAML` syntax and  should be always stored  in `.github/workflows`of the project root.
 
-Let's start building the workflow together to setup the Continuous Integration(CI) for [CLA Assistant](https://github.com/ibakshay/cla-assistant) project  which is a Node.js Application  😊. You can however setup GitHub Actions CI/CD for any language and is not language specific. 
+Let's start building the workflow together to setup the Continuous Integration(CI) for [CLA Assistant](https://github.com/ibakshay/cla-assistant) project  which is a Node.js Application  😊. You can however setup GitHub Actions CI/CD for any language and is not language specific. You can find the workflow file [here](https://github.com/ibakshay/cla-assistant/blob/master/.github/workflows/nodejs.yml).
 
  ```yaml 
 name: Node CI
